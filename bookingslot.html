@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --sweet alert-- -->
+    <script src="https://unpkg.com/vue-swal"></script>
+    <!-- --vibration-- -->
+    <script src="https://cdn.jsdelivr.net/npm/vibration-api-polyfill"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/c2119c4557.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/scroll.css" type="text/css">
+    <link rel="stylesheet" href="css/bookingslot.css" type="text/css">
+    <title>Book a slot.</title>
+</head>
+<body>
+    <div class="container">
+        <section class="landing-section">
+            <!-- navbar starts -->
+            <div class="navbar">
+                <div class="logo-part">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span class="logo-text">Aspire <span class="s-p-logo">Zone</span></span>
+                </div>
+                <nav class="navbar-links">
+                    <ul class="navUL">
+                        <li><a class="navbar-link" href="index.html">Home</a></li>
+                        <li><a class="navbar-link" href="">About</a></li>
+                        <li><a class="navbar-link" href="">Gallery</a></li>
+                        <li><a class="navbar-link" href="">Bookings</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
+            </div>
+            <!-- navbar ends -->
+            <div class="top-part-landing">
+                <h1 class="wow animate__animated animate__fadeInUp">Book your slots now!</h1>
+                <!-- <h4 class="wow animate__animated animate__fadeInUp">Peringathur</h4> -->
+            </div>
+        </section>
+        <section class="booking-section">
+            <div class="bs">
+                <div class="img-part-bs">
+                    <img src="images/soccer.png" alt="">
+                    <!-- <img src="https://st2.depositphotos.com/3725083/8652/i/450/depositphotos_86520310-stock-photo-soccer-surreal-stadium.jpg" alt=""> -->
+                </div>
+                <div class="filling-part-bs">
+                    <form name="formName" id="formName"> 
+                        <div class="input-group name-field"> 
+                            <label>Name</label>     
+                            <input type="text" placeholder="Your name" name="name">
+                            <div class="line"></div>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <small>Name should have atleast 4 characters.</small>
+                        </div>
+                        <div class="input-group phone-field"> 
+                            <label>Phone</label>     
+                            <input type="text" placeholder="Your Phone number" name="phone">
+                            <div class="line"></div>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <small>Enter a valid 10 digit mobile number.</small>
+                        </div>
+                        <div class="input-group date-field"> 
+                            <label>Date</label>     
+                            <input type="date" placeholder="Date" name="date">
+                            <div class="line"></div>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <small>Enter a valid date.</small>
+                        </div>
+                        <div class="name-email">
+                            <div class="input-group stime-field"> 
+                                <label>Starting Time</label>     
+                                <input type="time" placeholder="Starting time" name="starting-time">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <i class="fa-solid fa-exclamation-circle"></i>
+                                <small>Enter a valid time.</small>
+                            </div>
+                            <div class="input-group etime-field"> 
+                                <label>Ending Time</label>     
+                                <input type="time" placeholder="Duration" step="1800" name="ending-time"/>
+                                <!-- <select id="duration">
+                                    <optgroup label="Durations">
+                                      <option value="1:00">1 hour</option>
+                                      <option value="1:30">1 hour 30 minutes</option>
+                                      <option value="2:00">2 hours</option>
+                                      <option value="2:30">2 hours 30 minutes</option>
+                                      <option value="3:00">3 hours</option>
+                                      <option value="3:30">3 hours 30 minutes</option>
+                                      <option value="4:00">4 hours</option>
+                                      <option value="4:30">4 hours 30 minutes</option>
+                                      <option value="5:00">5 hours</option>
+                                    </optgroup>
+                                  </select> -->
+                                <div class="line"></div>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <i class="fa-solid fa-exclamation-circle"></i>
+                                <small>Enter a valid ending time.</small>
+                            </div>
+                        </div>
+                        <div class="input-group players-field"> 
+                            <label>Total players</label>     
+                            <input type="number" placeholder="Total players" min="4" max="30" name="players">
+                            <div class="line"></div>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <small>Must be greater than 3 and less than 25</small>
+                        </div>
+                        <div class="input-group amount-field"> 
+                            <label>Amount</label>     
+                            <input  disabled name="amount">
+                            <div class="line"></div>
+                        </div>
+                        <button class="btn submit" id="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/vue-swal"></script>
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --sweet alert-- -->
+    <script src="https://unpkg.com/vue-swal"></script>
+    <!-- --jquery-- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/c2119c4557.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/scroll.css" type="text/css">
+    <title>AspireZone</title>
+</head>
+<body>
+    <div class="container">
+        <!-- home section starts -->
+        <section class="home">
+            <!-- navbar starts -->
+            <div class="navbar">
+                <div class="logo-part">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span class="logo-text">Aspire <span class="s-p-logo">Zone</span></span>
+                </div>
+                <nav class="navbar-links">
+                    <ul class="navUL">
+                        <li><a class="navbar-link" href="#">Home</a></li>
+                        <li><a class="navbar-link" href="#about-sec">About</a></li>
+                        <li><a class="navbar-link" href="#gallery-sec">Gallery</a></li>
+                        <li><a class="navbar-link" href="bookingslot.html">Bookings</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
+            </div>
+            <!-- navbar ends -->
+            <div class="wrapper">
+                <h1 class="wow animate__animated animate__fadeInUp">ASPIRE<span>ZONE</span></h1>
+                <h4 class="wow animate__animated animate__fadeInUp">Peringathur</h4>
+                <div class="reveal">
+                    <a class="mouse_scroll">
+
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div>
+                            <span class="m_scroll_arrows unu"></span>
+                            <span class="m_scroll_arrows doi"></span>
+                            <span class="m_scroll_arrows trei"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- home section ends -->
+        <section class="about-section" id="about-sec">
+            <div class="details">
+                <div class="details-data">
+                    <div class="image wow animate__animated animate__fadeInLeft">
+                        <img src="https://www.sporteeno.com/wp-content/uploads/2021/07/mobs2.jpg" alt="">
+                        <!-- https://www.sporteeno.com/wp-content/uploads/2019/11/turf-shadow.png -->
+                    </div>
+                    <div class="text-part wow animate__animated animate__fadeInRight">
+                        <p>AspireZone, a turf near Peringathur, lying on the shore of Mahi River. Our mission is to 
+                            provide a safe and welcoming environment for all those who wish to enjoy sports and 
+                            recreation. We are proud to be a part of the vibrant sports community in our city and 
+                            look forward to welcoming you to our turf field.
+                        </p>
+                        <div class="items">
+                            <div><label>Status: </label><span>Opened</span></div>
+                            <div><label>Opening time: </label><br><span class="dd">All days</span><br><span class="dd">6:00 AM to 11:30 PM</span></div>
+                            <div><label>Cost: </label><br><span class="dd dt">Day time: </span><span>700 per hour</span><br>
+                                <span class="dd dt">Night time: </span><span>900 per hour</span></div>
+                            <div><label>For booking: </label><span>Call <a href="tel:+91 9562221956">9562221956</a></span></div>
+                        </div>
+                        <div class="follow">
+                            <p>Follow us on</p>
+                            <div class="follow-icons">
+                                <a class="wow animate__animated animate__rotateIn" href=""><i class="fa fa-instagram"></i></a>
+                                <a class="wow animate__animated animate__rotateIn" href=""><i class="fa fa-facebook"></i></a>
+                                <a class="wow animate__animated animate__rotateIn" href=""><i class="fa fa-twitter"></i></a>
+                                <a class="wow animate__animated animate__rotateIn" href=""><i class="fa fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapouter wow animate__animated animate__fadeInLeft">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=961&amp;height=702&amp;hl=en&amp;q=aspirezone pernigathur&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="features-section">
+            <p class="sub-title wow animate__animated animate__fadeInUp">Our Features</p>
+            <h1 class="main-title wow animate__animated animate__fadeInUp">What we offer</h1>
+            <div class="cards">
+                <div class="card wow animate__animated animate__fadeInLeft">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </span>
+                    <span class="feature-title">
+                        <p>Cheap Rate</p>
+                    </span>
+                </div>
+                <div class="card wow animate__animated animate__fadeInLeft">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </span>
+                    <span class="feature-title">
+                        <p>View Point</p>
+                    </span>
+                </div>
+                <div class="card wow animate__animated animate__fadeInLeft">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-glass-water-droplet"></i>
+                    </span>
+                    <span class="feature-title">
+                        <p>Purified Water</p>
+                    </span>
+                </div>
+                <div class="card wow animate__animated animate__fadeInLeft">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-restroom"></i>
+                    </span>
+                    <span class="feature-title">
+                        <p>Rest Room</p>
+                    </span>
+                </div>
+                <div class="card wow animate__animated animate__fadeInLeft">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-person-booth"></i>
+                    </span>
+                    <span class="feature-title">
+                        <p>Changing Room</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section" id="gallery-sec">
+            <p class="sub-title wow animate__animated animate__fadeInUp">Gallery</p>
+            <h1 class="main-title wow animate__animated animate__fadeInUp">Our Portfolio</h1>
+            <div class="gallery">
+                <div>
+                    <img src="images/ball1.jpg" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div>
+                    <img src="images/restroom.jpg" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div>
+                    <img src="images/aspire.jpg" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div>
+                    <img src="images/aspire 2.jpg" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div>
+                    <img src="images/water dispenser.png" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div>
+                    <img src="images/ball2.jpg" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <div>
+                    <img src="images/football.jpg" alt="">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+            </div>
+            <button class="view-more btn">View more</button>
+        </section>
+        <section class="faq-section">
+            <p class="sub-title wow animate__animated animate__fadeInUp">F.A.Q</p>
+            <h1 class="main-title wow animate__animated animate__fadeInUp">Frequently Asked Questions</h1>
+            <div class="question-part">
+
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Where is this turf located ?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            It is near to Peringathur bridge. On the river side of Mazhayayi river.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Can I bring my own equipment, such as goals or nets, to the turf field?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            Yes, you can bring as you wish.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Are there any age restrictions for using the turf field?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            No, there is no age limit.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Can I pay the amount through UPI payment method ?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            Yes, UPI payment feature is available.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Is there a discount for regular or frequent users of the turf field?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            Surely, its our pleasure.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Is there a minimum or maximum number of players required to book a turf field?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            Yes, minimum 4 persons and maximum is your wish.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">Can spectators watch games or events from the sidelines of the turf field?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            Yes, there are about 50 seats for spectators.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+                <div class="question">
+                    <details class="details">
+                        <summary>
+                            <span class="faq-question">How far in advance do I need to book a turf field for my event or game?</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            Atleast before one day.
+                        </div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </details>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="contact-section">
+            <p class="sub-title wow animate__animated animate__fadeInUp">Contact us</p>
+            <h1 class="main-title wow animate__animated animate__fadeInUp">Any Queries?</h1>
+            <div class="contact-area">
+                <div class="turf-image">
+                    <img src="https://preview.colorlib.com/theme/bootstrap/contact-form-16/images/undraw-contact.svg" alt="">
+                </div>
+                <div class="contact">
+                    <form id="gform" action="">
+                    <div class="name-email">
+                        <div class="input-group name-field"> 
+                            <label>Name</label>     
+                            <input type="text" required placeholder="Your name" name="name">
+                            <div class="line"></div>
+                        </div>
+                        <div class="input-group email-field"> 
+                            <label>Email</label>     
+                            <input type="email" required placeholder="Your Email" name="email">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="input-group subject-field"> 
+                        <label>Subject</label>     
+                        <input type="text" required placeholder="Subject" name="subject">
+                        <div class="line"></div>
+                    </div>
+                    <div class="input-group message-field"> 
+                        <label>Message</label>     
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <div class="line"></div>
+                    </div>
+                    <button type="submit" class="btn send">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="footer">
+                <div class="first-area">
+                    <span class="logo-text">Aspire <span class="s-p-logo">Zone</span></span>
+                    <p>Peringathur</p>
+                    <div class="social-icons">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="second-area">
+                    <span class="footer-title">Quick Links</span>
+                    <div class="footer-sub-parent">
+                        <p class="footer-sub">Home</p>
+                        <p class="footer-sub">About</p>
+                        <p class="footer-sub">Gallery</p>
+                        <p class="footer-sub">Bookings</p>
+                    </div>
+                </div>
+                <div class="third-area">
+                    <span class="footer-title">Contact Us</span>
+                    <div class="footer-sub-parent">
+                        <span class="footer-sub ct">
+                            <i class="fa fa-phone"></i>
+                            <p>+91 9562221956</p>
+                        </span>
+                        <span class="footer-sub ct">
+                            <i class="fa fa-whatsapp"></i>
+                            <p>+91 9562221956</p>
+                        </span>
+                        <span class="footer-sub ct">
+                            <i class="fa fa-envelope"></i>
+                            <p>aspirezone@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="policy">
+                <p>Copyright © 2023 All Rights Reserved | Developed by Shanid</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        $("#gform").submit((e) => {
+            e.preventDefault();
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbw1iGiu7dMROElYgBMQ8NQTRTlXvBkoB3OjQpEm0F_CjCh5q6xEBiy8AEmgYnhARrXP/exec",
+                data: $("#gform").serialize(),
+                method: "post",
+                success: function(response) {
+                    swal({
+                        title: "Done!",
+                        text: "Your message has been sent.",
+                        icon: "success",
+                        button: "Ok!",
+                    }).then(function() {
+                        window.location.reload();
+                    });
+                },
+                error: function(err) {
+                    swal({
+                        title: "Error!",
+                        text: "Something error occurred!!",
+                        icon: "info",
+                        button: "Try again",
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+.landing-section{
+    height: 50vh;
+    /* background-image: url("https://www.playspots.in/wp-content/uploads/2022/07/AspireZone6aBSFxhMvz.jpeg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("https://www.playspots.in/wp-content/themes/playspots/images/spotslide1.jpg");
+    background-size: cover;
+}
+.top-part-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    height: 50vh;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.top-part-landing h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+/* .booking-section, .bs, .img-part-bs, .img-part-bs img, .filling-part-bs{
+    outline: 1px solid black;
+} */
+.input-group{
+    position: relative;
+    margin-top: 0px;
+}
+.booking-section{
+    padding: 40px 6% 60px 6%;
+}
+.bs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.img-part-bs{
+    width: 40%;
+}
+.img-part-bs img{
+    width: 100%;
+}
+.filling-part-bs{
+    width: 450px;
+}
+/* .fa-check-circle,
+.fa-exclamation-circle{
+    position: absolute;
+}  */
+.input-group select{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.2;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.input-group i{
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+}
+.stime-field i, 
+.etime-field i,
+.date-field i{
+    right: 25px;
+}
+.input-group small{
+    color: #e74c3c;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+.fa-check-circle{
+    color:#2ecc71;
+}
+.fa-exclamation-circle{
+    color: #e74c3c;
+}
+.submit{
+    padding: 5px 24px;
+    font-size: 16px;
+}
+
+
+
+@media(max-width: 1170px){
+    .img-part-bs{
+        width: 50%;
+    }
+}
+@media(max-width: 1000px){
+    .bs{
+        gap: 30px;
+    }
+}
+@media(max-width: 960px){
+    .bs{
+        gap: 20px;
+    }
+    .filling-part-bs{
+        width: 400px;
+    }
+}
+@media(max-width: 880px){
+    .bs{
+        flex-direction: column;
+    }
+    .filling-part-bs{
+        width: 450px;
+        order: 1;
+    }
+    .img-part-bs{
+        order: 2;
+        width: 450px;
+    }
+}
+@media(max-width: 680px){
+    .top-part-landing h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+}
+@media(max-width: 515px){
+    .filling-part-bs{
+        width: 350px;
+    }
+    .img-part-bs{
+        width: 350px;
+    }
+}
+@media(max-width: 525px){
+    .top-part-landing{
+        text-align: center;
+    }
+    .top-part-landing h1{
+        font-size: 35px;
+    }
+}
+@media(max-width: 400px){
+    .filling-part-bs{
+        width: 300px;
+    }
+    .img-part-bs{
+        width: 300px;
+    }
+}
+@media(max-width: 370px){
+    .filling-part-bs{
+        width: 250px;
+    }
+    .img-part-bs{
+        width: 250px;
+    }
+}
