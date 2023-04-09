@@ -85,6 +85,7 @@ body{
     justify-content: center;
     color: var(--white);
     height: 100vh;
+    padding: 0px 6% 0px 6%;
 }
 .wrapper h1{
     font-size: 56px;
@@ -668,18 +669,16 @@ summary{
     }
 }
 @media(max-width: 735px) {
+    .navbar-links{
+        border-radius: 10px;
+    }
     .navUL{
         position: absolute;
         top: 83px;
         right: -200px;
-        /* transition: 0.5s ease-in-out; */
-        /* background-color: #fff; */
-        /* padding: 10px 0px ; */
-        /* border-radius: 4px; */
         list-style-type: none;
         transition:  0.4s ease;
         display: block;
-        /* box-shadow: 0 5px 35px rgba(0, 0, 0, 0.4); */
     }
     .navUL li{
         display: block;
@@ -690,7 +689,7 @@ summary{
         text-align: center;
         background: #fff;
         color: var(--black);
-        padding: 4px 0px 4px 0px;
+        padding: 6px 0px 6px 0px;
     } 
     .navbar-link:hover{
         color: var(--bgColor);
@@ -754,6 +753,18 @@ summary{
     .name-email{
         flex-direction: column;
         gap: 0px;
+    }
+}
+@media(max-width: 390px){
+    .wrapper h1{
+        font-size: 40px;
+    }
+    .wrapper h4{
+        font-size: 23px;
+    }
+    details{
+        font-size: 16px;
+        width: 400px;
     }
 }
 /* ------@media queries ends----  */
