@@ -51,20 +51,23 @@ body{
     margin-left: -5px;
 }
 .navUL{
-    display: inline-block;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
-.navUL li{
+/* .navUL li{
     display: inline-block;
     margin-right: 20px;
 }
 .navUL li:nth-child(4){
     margin-right: 0px;
-}
+} */
 .navbar-link{
     font-size: 19px;
     font-weight: 500;
     text-decoration: none;
     color: var(--white);
+    border: none;
 }
 .fa-bars{
     font-size: 19px;
@@ -402,6 +405,11 @@ summary{
     padding: 10px 20px;
     list-style: none;
 }
+details summary::-webkit-details-marker,
+details summary::-moz-details-marker,
+details summary::-o-details-marker {
+    display: none;
+}
 .fa-angle-up{
     /* display: none; */
     position: absolute;
@@ -669,36 +677,40 @@ summary{
     }
 }
 @media(max-width: 735px) {
-    .navbar-links{
-        border-radius: 10px;
-    }
     .navUL{
+        border-radius: 5px;
         position: absolute;
-        top: 83px;
-        right: -200px;
-        list-style-type: none;
-        transition:  0.4s ease;
-        display: block;
+        background: white;
+        right: -100%;
+        top: 95px;
+        width: 95%;
+        justify-self: center;
+        /* height: 300px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 1s;
+        gap: 0;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.4);
     }
     .navUL li{
-        display: block;
+        padding: 8px 0px 8px 0px; 
+        width: 100%;
+        text-align: center;
+        color: #000;
     }
     .navbar-link{
-        display: block; 
-        width: 150px;
-        text-align: center;
-        background: #fff;
         color: var(--black);
-        padding: 6px 0px 6px 0px;
     } 
     .navbar-link:hover{
         color: var(--bgColor);
     }
     .fa-bars{
-        display: inline-block;
+        display: block;
     }
     .menu-active{
-        right: 20px;
+        right: 2.5%;
     } 
 }
 @media(max-width: 717px){
@@ -761,10 +773,15 @@ summary{
     }
     .wrapper h4{
         font-size: 23px;
+        margin-top: -15px;
     }
-    details{
-        font-size: 16px;
-        width: 400px;
+}
+@media(max-width: 390px){
+    .wrapper h1{
+        font-size: 35px;
+    }
+    .wrapper h4{
+        font-size: 21px;
     }
 }
 /* ------@media queries ends----  */
