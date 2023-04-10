@@ -403,9 +403,9 @@ summary{
     padding: 10px 20px;
     list-style: none;
 }
-details summary::-webkit-details-marker,
-details summary::-moz-details-marker,
-details summary::-o-details-marker {
+summary::-webkit-details-marker,
+summary::-moz-details-marker,
+summary::-o-details-marker {
     display: none;
 }
 .fa-angle-up{
@@ -749,7 +749,7 @@ details summary::-o-details-marker {
 }
 @media(max-width: 435px){
     details{
-        font-size: 15;
+        font-size: 15px;
         width: 350px;
     } 
 }
@@ -774,7 +774,13 @@ details summary::-o-details-marker {
         margin-top: -15px;
     }
 }
-@media(max-width: 390px){
+@media(max-width: 365px){
+    details{
+        width: 300px;
+        font-size: 13px;
+    } 
+}
+@media(max-width: 340px){
     .wrapper h1{
         font-size: 35px;
     }
@@ -782,6 +788,13 @@ details summary::-o-details-marker {
         font-size: 21px;
     }
 }
+@media(max-width: 315px){
+    details{
+        width: 270px;
+        font-size: 11px;
+    } 
+}
+
 /* ------@media queries ends----  */
 
 /* --active clases---- */
