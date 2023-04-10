@@ -378,8 +378,6 @@ body{
 .faq-section{
     background: url("https://img.freepik.com/premium-photo/green-watercolor-painted-texture-background_23-2147836295.jpg?w=826");
     background-size: cover;
-    /* background-position: center; */
-    /* height: 80vh; */
     padding: 40px 6% 60px 6%;
     display: flex;
     flex-direction: column;
