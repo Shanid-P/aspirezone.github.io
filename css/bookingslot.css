@@ -47,6 +47,11 @@
 .fa-exclamation-circle{
     position: absolute;
 }  */
+input[type="date"],
+input[type="time"],
+input[type="number"]:disabled{
+    background-color: #ffffff;
+}
 .input-group select{
     display: block;
     width: 100%;
@@ -154,5 +159,9 @@
     }
     .img-part-bs{
         width: 250px;
+    }
+    .players-field i,
+    .name-field i{
+        top: 25%;
     }
 }

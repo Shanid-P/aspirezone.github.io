@@ -550,10 +550,12 @@ summary::-o-details-marker {
     cursor: pointer;
     color: var(--bgColor);
 }
-.second-area p{
+.second-area p a{
     font-size: 18px;
+    text-decoration: none;
+    color: #fff;
 }
-.second-area p:hover{
+.second-area p a:hover{
     color: var(--bgColor);
     cursor: pointer;
 }
@@ -786,6 +788,11 @@ summary::-o-details-marker {
         font-size: 13px;
     } 
 }
+@media(max-width: 363px){
+    .card{
+        margin-top: 5px;
+    }
+}
 @media(max-width: 340px){
     .wrapper h1{
         font-size: 35px;
@@ -799,8 +806,34 @@ summary::-o-details-marker {
         width: 270px;
         font-size: 11px;
     } 
+    .contact{
+        width: 250px;
+    }
+    .turf-image{
+        width: 250px;
+    }
 }
-
+@media(max-width: 307px){
+    .features-section h1{
+        line-height: 1;
+        margin-top: 10px;
+    }
+}
+@media(max-width: 292px){
+    .contact-section h1{
+        line-height: 1;
+        margin-top: 10px;
+    }
+    .first-area .logo-text{
+        font-size: 25px;
+    }
+}
+@media(max-width: 277px){
+    .gallery-section h1{
+        line-height: 1;
+        margin-top: 10px;
+    }
+}
 /* ------@media queries ends----  */
 
 /* --active clases---- */
