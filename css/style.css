@@ -716,6 +716,12 @@ summary::-o-details-marker {
         width: 500px;
     } 
 }
+@media(max-width: 621px){
+    .faq-section h1{
+        line-height: 1;
+        margin-top: 10px;
+    }
+}
 @media(max-width: 575px){
     .turf-image{
         width: 400px;
